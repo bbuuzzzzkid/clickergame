@@ -1,9 +1,3 @@
-function randint(min:number, max:number):number {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
- 
-
-
 class Animal{
   legs:number;
   reaction:string;
@@ -93,6 +87,14 @@ class Safari{
     }
 
    handleIDK(){
+   let x = Math.random()
+    if(x > 0.9731487698345798341570345790843587432587435984352874350745329743509743529087453987435297234597453435972958){
+      console.log("YOU HAVE FOUND, THE EXTREMELY RARE CRAZY HARD TO FIND MONSTER...")
+      console.log("HAKEHAAAAAALAAAAAAHHHHHHHHHH!!! (BTW, the actual name is only Hakehaalah but since it sounds like a freaking war cry...")
+    }
+    else{
+      console.log("YOU HAVE NOT FOUND THE HAKEHAALAH... and you may never, considering the odds of finding it are 2.68512301654201658429654209156412567412564015647125649254670256490256470912546012564702765402546564027042%. I AM NOT JOKING. I dare you, check the freakin' code. I. DARE. YOU. >:) (somehow, this is still less rare then some of the other secrets in this game >:) )")
+    }
    }
 
   handleDogPark(){
@@ -123,14 +125,44 @@ console.log("")
   }
 }
 
+handleTransition(){
+  switch(this.thisArea){
+        case "IDK":
+          if(Math.random()>0.5){
+            this.thisArea = "Dog park (mysteriously off somehow)"
+          }
+          else{
+          this.thisArea = "Farm"
+          }
+          break
+        case "Farm":
+          if(Math.random()>0.5){
+            this.thisArea = "Dog park (mysteriously off somehow)"
+          }
+          else{
+          this.thisArea = "IDK"
+          }
+          break
+        case "Dog park (mysteriously off somehow)":
+          if(Math.random()>0.5){
+            this.thisArea = "IDK"
+          }
+          else{
+          this.thisArea = "Farm"
+          }
+          break
+        default:
+          console.log("AAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH WHY IS THIS HAPPENING WTH AAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH")
+      }
+}
 
 timerLoopThatRunsEveryFrame(){ 
-      switch(this.thisArea){
+     switch(this.thisArea){
         case "IDK":
           this.handleIDK()
           break
         case "Farm":
-          this.handleFarm()
+          this .handleFarm()
           break
         case "Dog park (mysteriously off somehow)":
           this.handleDogPark()
@@ -138,5 +170,6 @@ timerLoopThatRunsEveryFrame(){
         default:
           console.log("AAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH")
       }
+      this.handleTransition()
     }
 }
