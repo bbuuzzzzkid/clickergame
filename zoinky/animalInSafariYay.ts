@@ -78,9 +78,9 @@ else{
  }
 }
 
-type Area = "IDK"| "Farm"| "Dog park (mysteriously off somehow)"
+export type Area = "IDK"| "Farm"| "Dog park (mysteriously off somehow)"
 
-class Safari{
+export default class Safari{
   thisArea:Area
     constructor(){
         this.thisArea = "IDK"
@@ -173,3 +173,4 @@ timerLoopThatRunsEveryFrame(){
       this.handleTransition()
     }
 }
+
