@@ -15,7 +15,7 @@ export default function Home() {
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <div>
-           <h1>Hello, welcome to: clicker game</h1>
+           <h1>WEEEEE SAFARI HAS WEIRD STUFF IN IT ANYWAY WHy ARE YOU HERE Gh;rth;jdSGHKJ;ADHBKAJRHEG;AD;H ihOUsihg rOSFHG;IRHGjrg;i rHNPOihe fipreghiperghoeqrihorehpuir ihnbhaohoiadhj;adiotgh'</h1>
          
 
 
@@ -24,7 +24,7 @@ export default function Home() {
           }
           onClickHandler={() => alert("YAY! YOU THINK HOMEWORK IS BAD TOO! BECAUSE IS IT SUCKS!!! SPREAD THE WORD!!!")}
           ></SchoolIsBad> */}
-          <WeirdButton destination = "/clicker" clickNumber={100} label = "PLEASE DON'T CLICK ME😭" label2 = "I like to eat that many cookies:" startmessage = "PLEAAAAAASSSSSEEEEE DON'T CLICK IT!!! IT HAS FEELINGS TOO!😭" endmessage = "HOW DARE YOU CLICK THE BUTTON YOU MONSTER!!! HERE'S YOUR PUNISHMENT FOR THESE TERRIBLE CRIMES YOU'VE COMMITTED!"></WeirdButton>
+          <WeirdButton destination = "/clicker" clickNumber={100} label = "OOHHH BUTTON :)" label2 = "YOU HAVE CLICKED THE BUTTON THIS MANY TIMES, WHILE WASTING YOUR SHORT LIFESPAN IN THE PROCESS:" startmessage = "OOHHH BUTTON! :)" endmessage = "OOHHHH FANCY HYPERLINK WEIRD PAGE CHANGE THINGY :)"></WeirdButton>
         </div>
          <Image src = {GETALIFE}
          width = {1000} height = {1000} alt = "GET A LIFE"
