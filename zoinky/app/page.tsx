@@ -8,8 +8,9 @@ import { useState, useEffect, useRef} from "react";
 import { useRouter } from "next/navigation";
 import Safari from "@/animalInSafariYay";
 import { Area } from "@/animalInSafariYay";
-
-
+import doggypark from "../public/helloworldimageorotherimages/doggypark.png"
+import farm from  "../public/helloworldimageorotherimages/farm.png"
+import idk from  "../public/helloworldimageorotherimages/idk.png"
 
 export default function Home() {
   const ASafari = useRef(new Safari())
@@ -17,12 +18,19 @@ export default function Home() {
 
 const operationGetTheBackground = (currentArea:Area)=>{
   switch(currentArea){
+    //test imgs next time
         case "IDK":
-          break
+          return <Image src = {idk}
+         width = {1000} height = {1000} alt = ""
+         />
         case "Farm":
-          break
+          return <Image src = {farm}
+         width = {1000} height = {1000} alt = ""
+         />
         case "Dog park (mysteriously off somehow)":
-          break
+          return <Image src = {doggypark}
+         width = {1000} height = {1000} alt = ""
+         />
         default:
           console.log("AAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH WHY IS THIS HAPPENING WTH AAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH")
       }
