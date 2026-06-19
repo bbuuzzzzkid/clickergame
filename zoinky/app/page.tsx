@@ -15,7 +15,7 @@ export default function Home() {
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <div>
-           <h1>WEEEEE SAFARI HAS WEIRD STUFF IN IT ANYWAY WHy ARE YOU HERE Gh;rth;jdSGHKJ;ADHBKAJRHEG;AD;H ihOUsihg rOSFHG;IRHGjrg;i rHNPOihe fipreghiperghoeqrihorehpuir ihnbhaohoiadhj;adiotgh'</h1>
+           <title>WEEEEE SAFARI THAT HAS WEIRD STUFF IN IT ANYWAY WHy ARE YOU HERE'</title>
          
 
 
