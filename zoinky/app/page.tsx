@@ -18,6 +18,8 @@ export default function Home() {
   useEffect(()=>{
     console.log("YES IT'S WORKING!!! ITS ACTUALLY WORKING... cool")
   }, [ASafari.current.thisArea])
+  /* Put and fill in this sudocode in l8r... (rohan at jul 2, 2026, and 4:31PM)
+  if !startgame{show start button} else {show thse arrows to navigate zones}*/
 
 const operationGetTheBackground = (currentArea:Area)=>{
   switch(currentArea){
