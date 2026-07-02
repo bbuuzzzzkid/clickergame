@@ -15,6 +15,9 @@ import idk from  "../public/helloworldimageorotherimages/idk.png"
 export default function Home() {
   const ASafari = useRef(new Safari())
   const [startGame, setStartgame] = useState(false)
+  useEffect(()=>{
+    console.log("YES IT'S WORKING!!! ITS ACTUALLY WORKING... cool")
+  }, [ASafari.current.thisArea])
 
 const operationGetTheBackground = (currentArea:Area)=>{
   switch(currentArea){
