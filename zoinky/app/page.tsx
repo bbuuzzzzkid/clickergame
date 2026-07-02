@@ -20,7 +20,12 @@ export default function Home() {
   }, [ASafari.current.thisArea])
   /* Put and fill in this sudocode in l8r... (rohan at jul 2, 2026, and 4:31PM)
   if !startgame{show start button} else {show thse arrows to navigate zones}*/
+const another_example_of_me_making_bad_variable_names = (bool:boolean)=>{
+if (bool){
+return console.log("This also works. Cool")
+}
 
+}
 const operationGetTheBackground = (currentArea:Area)=>{
   switch(currentArea){
     //test imgs next time
