@@ -24,7 +24,9 @@ const another_example_of_me_making_bad_variable_names = (bool:boolean)=>{
 if (bool){
 return <h1>YOU HAVE STARTED THE GAME. Bro, you are just wasting your time like what the actual hell man</h1>
 }
-
+else{
+  return  <button className="size-100 text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5" onClick = {()=> setStartgame(true)}>START GAME</button>
+}
 }
 const operationGetTheBackground = (currentArea:Area)=>{
   switch(currentArea){
@@ -61,8 +63,6 @@ const operationGetTheBackground = (currentArea:Area)=>{
          <Image src = {GETALIFE}
          width = {1000} height = {1000} alt = "GET A LIFE"
          />
-
-        <button className="size-100 text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5" onClick = {()=> setStartgame(true)}>START GAME</button>
 {operationGetTheBackground(ASafari.current.thisArea)}
       </main>
     </div>
