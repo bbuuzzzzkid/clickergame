@@ -22,7 +22,7 @@ export default function Home() {
   if !startgame{show start button} else {show thse arrows to navigate zones}*/
 const another_example_of_me_making_bad_variable_names = (bool:boolean)=>{
 if (bool){
-return console.log("This also works. Cool")
+return <h1>YOU HAVE STARTED THE GAME. Bro, you are just wasting your time like what the actual hell man</h1>
 }
 
 }
@@ -57,6 +57,7 @@ const operationGetTheBackground = (currentArea:Area)=>{
         <div>
            <h1>WEEEEE SAFARI THAT HAS WEIRD STUFF IN IT ANYWAY WHy ARE YOU HERE do you have a LIFE if you dont I am very sorry for your loss, unless you are a robot in which case whoever programmed you is high.</h1>
           </div>
+          {another_example_of_me_making_bad_variable_names(startGame)}
          <Image src = {GETALIFE}
          width = {1000} height = {1000} alt = "GET A LIFE"
          />
