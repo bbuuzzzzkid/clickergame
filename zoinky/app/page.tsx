@@ -51,7 +51,7 @@ const operationGetTheBackground = (currentArea:Area)=>{
          width = {1000} height = {1000} alt = "GET A LIFE"
          />
 
-        <button className="h-full max-h-80 w-80" onClick = {()=> setStartgame(true)}>START GAME</button>
+        <button className="size-100" onClick = {()=> setStartgame(true)}>START GAME</button>
 {operationGetTheBackground(ASafari.current.thisArea)}
       </main>
     </div>
