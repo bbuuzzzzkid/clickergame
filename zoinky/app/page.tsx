@@ -15,6 +15,7 @@ import idk from  "../public/helloworldimageorotherimages/idk.png"
 export default function Home() {
   const ASafari = useRef(new Safari())
   const [startGame, setStartgame] = useState(false)
+  const [thisWasMadeToFixABug,setThisWasMadeToFixABug] = useState("IDK")
   useEffect(()=>{
     console.log("YES IT'S WORKING!!! ITS ACTUALLY WORKING... cool")
   }, [ASafari.current.thisArea])
@@ -26,7 +27,8 @@ return <div>
   <h1>YOU HAVE STARTED THE GAME. Bro, you are just wasting your time like what the actual hell man</h1> 
   <button onClick = {()=>{
   ASafari.current.handleTransition()
-  console.log(ASafari.current.thisArea)   
+  console.log(ASafari.current.thisArea)
+  setThisWasMadeToFixABug(ASafari.current.thisArea)   
   }} className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5 w-128" >BUTTON 1 YIPEE</button> 
   {/* <button onClick = {ASafari.current.handleTransition} className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-base text-sm px-4 py-2.5 text-center leading-5 w-128">BUTTON 2 YEAH</button> */}
   </div>
