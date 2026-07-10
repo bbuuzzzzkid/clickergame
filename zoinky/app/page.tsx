@@ -17,10 +17,9 @@ export default function Home() {
   const [startGame, setStartgame] = useState(false)
   const [thisWasMadeToFixABug,setThisWasMadeToFixABug] = useState("IDK")
   useEffect(()=>{
-    console.log("YES IT'S WORKING!!! ITS ACTUALLY WORKING... cool")
-  }, [ASafari.current.thisArea])
-  /* Put and fill in this sudocode in l8r... (rohan at jul 2, 2026, and 4:31PM)
-  if !startgame{show start button} else {show thse arrows to navigate zones}*/
+    const interval = setInterval(()=>{ASafari.current.timerLoopThatRunsEveryFrame()},50)
+    return ()=>{clearInterval(interval)}
+  },[])
 const another_example_of_me_making_bad_variable_names = (bool:boolean)=>{
 if (bool){
 return <div>
@@ -40,11 +39,11 @@ else{
 const operationGetTheBackground = (currentArea:Area)=>{
   switch(currentArea){
     //test imgs next time
-        case "IDK":
+        case "IDK": 
           return <Image src = {idk}
          width = {1000} height = {1000} alt = ""
          />
-        case "Farm":
+        case "Farm": 
           return <Image src = {farm}
          width = {1000} height = {1000} alt = ""
          />
@@ -55,14 +54,9 @@ const operationGetTheBackground = (currentArea:Area)=>{
         default:
           console.log("AAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH WHY IS THIS HAPPENING WTH AAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH")
       }
-
 }
 
   return (
-
-
-
-
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <div>
