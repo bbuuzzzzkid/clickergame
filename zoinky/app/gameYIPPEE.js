@@ -1,6 +1,6 @@
 
-let c = document.getElementById("c");
-let ctx = c.getContext("2d");
+let c;
+let ctx;
 const bgm = new Audio("99477_Every_End....mp3")
 let won = false
 bgm.loop = true
