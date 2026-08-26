@@ -372,6 +372,7 @@ export default function Page() {
     // ===== LOOP =====
 
     function loop() {
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
       ctx.clearRect(0, 0, c.width, c.height);
 
       if (!started) {
@@ -498,6 +499,8 @@ export default function Page() {
           bgm.currentTime = 0;
           bgm.play().catch(() => {});
         }
+
+        ctx.restore();
 
         animationId = requestAnimationFrame(loop);
         return;
