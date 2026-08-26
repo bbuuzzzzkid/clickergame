@@ -8,8 +8,13 @@ export default function Home() {
 //On startup
 const canvasRef = useRef(null)
 useEffect(()=>{
-setCanvas(canvasRef)
- loop()
+const bgm = new Audio("99477_Every_End....mp3")
+bgm.loop = true
+bgm.volume = 0.4
+bgm.currentTime = 0;
+bgm.play();
+// setCanvas(canvasRef)
+//  loop()
 },)
 
   return (

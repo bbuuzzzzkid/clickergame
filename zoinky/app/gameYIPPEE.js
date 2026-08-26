@@ -1,12 +1,7 @@
 
 let c;
 let ctx;
-const bgm = new Audio("99477_Every_End....mp3")
 let won = false
-bgm.loop = true
-bgm.volume = 0.4
-c.width = window.innerWidth;
-c.height = window.innerHeight;
 
 // ===== INPUT =====
 let keys = {};
@@ -23,6 +18,9 @@ document.addEventListener("keydown", e => {
 export function setCanvas(canvasRef){
 c = canvasRef;
 ctx = c.getContext("2d");
+c.width = window.innerWidth;
+c.height = window.innerHeight;
+
 }
 document.addEventListener("keyup", e => keys[e.key] = false);
 
@@ -348,16 +346,16 @@ export default function loop(){
             started = true;
             hardcore = false;
 
-            bgm.currentTime = 0;
-            bgm.play();
+            // bgm.currentTime = 0;
+            // bgm.play();
         }
 
         if(keys["2"]){
             started = true;
             hardcore = true;
 
-            bgm.currentTime = 0;
-            bgm.play();
+            // bgm.currentTime = 0;
+            // bgm.play();
         }
 
         requestAnimationFrame(loop);
